@@ -5,15 +5,16 @@
 //描述:
 //
 
-#pragma once
-<iostream>
-using namespace std;
 
 #ifndef CODE_ROBOT_H
 #define CODE_ROBOT_H
 
+#include <iostream>
+#include <string>
+using namespace std;
 
 class robot {
+    public
 
 };
 

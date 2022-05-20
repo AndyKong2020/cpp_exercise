@@ -61,6 +61,36 @@ build CMakeFiles/code.dir/robot.cpp.obj: CXX_COMPILER__code_Debug E$:/rm/code/ro
   OBJECT_DIR = CMakeFiles\code.dir
   OBJECT_FILE_DIR = CMakeFiles\code.dir
 
+build CMakeFiles/code.dir/robot_B.cpp.obj: CXX_COMPILER__code_Debug E$:/rm/code/robot_B.cpp || cmake_object_order_depends_target_code
+  DEP_FILE = CMakeFiles\code.dir\robot_B.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\code.dir
+  OBJECT_FILE_DIR = CMakeFiles\code.dir
+
+build CMakeFiles/code.dir/robot_S.cpp.obj: CXX_COMPILER__code_Debug E$:/rm/code/robot_S.cpp || cmake_object_order_depends_target_code
+  DEP_FILE = CMakeFiles\code.dir\robot_S.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\code.dir
+  OBJECT_FILE_DIR = CMakeFiles\code.dir
+
+build CMakeFiles/code.dir/robot_Y.cpp.obj: CXX_COMPILER__code_Debug E$:/rm/code/robot_Y.cpp || cmake_object_order_depends_target_code
+  DEP_FILE = CMakeFiles\code.dir\robot_Y.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\code.dir
+  OBJECT_FILE_DIR = CMakeFiles\code.dir
+
+build CMakeFiles/code.dir/robot_G.cpp.obj: CXX_COMPILER__code_Debug E$:/rm/code/robot_G.cpp || cmake_object_order_depends_target_code
+  DEP_FILE = CMakeFiles\code.dir\robot_G.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\code.dir
+  OBJECT_FILE_DIR = CMakeFiles\code.dir
+
+build CMakeFiles/code.dir/judge_sys.cpp.obj: CXX_COMPILER__code_Debug E$:/rm/code/judge_sys.cpp || cmake_object_order_depends_target_code
+  DEP_FILE = CMakeFiles\code.dir\judge_sys.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\code.dir
+  OBJECT_FILE_DIR = CMakeFiles\code.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target code
@@ -69,7 +99,7 @@ build CMakeFiles/code.dir/robot.cpp.obj: CXX_COMPILER__code_Debug E$:/rm/code/ro
 #############################################
 # Link the executable code.exe
 
-build code.exe: CXX_EXECUTABLE_LINKER__code_Debug CMakeFiles/code.dir/main.cpp.obj CMakeFiles/code.dir/robot.cpp.obj
+build code.exe: CXX_EXECUTABLE_LINKER__code_Debug CMakeFiles/code.dir/main.cpp.obj CMakeFiles/code.dir/robot.cpp.obj CMakeFiles/code.dir/robot_B.cpp.obj CMakeFiles/code.dir/robot_S.cpp.obj CMakeFiles/code.dir/robot_Y.cpp.obj CMakeFiles/code.dir/robot_G.cpp.obj CMakeFiles/code.dir/judge_sys.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\code.dir
