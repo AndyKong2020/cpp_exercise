@@ -3,4 +3,4 @@ project(code)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(code main.cpp robo.h)
+add_executable(code main.cpp robot.cpp robot.h)
