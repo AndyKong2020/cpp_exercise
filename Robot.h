@@ -49,8 +49,7 @@ public:
     //目前热量
     int heat_point;
 
-    //伤害值
-    int be_hit_;
+
 };
 
 
