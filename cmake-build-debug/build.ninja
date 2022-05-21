@@ -55,38 +55,38 @@ build CMakeFiles/code.dir/main.cpp.obj: CXX_COMPILER__code_Debug E$:/rm/code/mai
   OBJECT_DIR = CMakeFiles\code.dir
   OBJECT_FILE_DIR = CMakeFiles\code.dir
 
-build CMakeFiles/code.dir/robot.cpp.obj: CXX_COMPILER__code_Debug E$:/rm/code/robot.cpp || cmake_object_order_depends_target_code
-  DEP_FILE = CMakeFiles\code.dir\robot.cpp.obj.d
+build CMakeFiles/code.dir/Robot.cpp.obj: CXX_COMPILER__code_Debug E$:/rm/code/Robot.cpp || cmake_object_order_depends_target_code
+  DEP_FILE = CMakeFiles\code.dir\Robot.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\code.dir
   OBJECT_FILE_DIR = CMakeFiles\code.dir
 
-build CMakeFiles/code.dir/robot_B.cpp.obj: CXX_COMPILER__code_Debug E$:/rm/code/robot_B.cpp || cmake_object_order_depends_target_code
-  DEP_FILE = CMakeFiles\code.dir\robot_B.cpp.obj.d
+build CMakeFiles/code.dir/Infantry.cpp.obj: CXX_COMPILER__code_Debug E$:/rm/code/Infantry.cpp || cmake_object_order_depends_target_code
+  DEP_FILE = CMakeFiles\code.dir\Infantry.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\code.dir
   OBJECT_FILE_DIR = CMakeFiles\code.dir
 
-build CMakeFiles/code.dir/robot_S.cpp.obj: CXX_COMPILER__code_Debug E$:/rm/code/robot_S.cpp || cmake_object_order_depends_target_code
-  DEP_FILE = CMakeFiles\code.dir\robot_S.cpp.obj.d
+build CMakeFiles/code.dir/Sentry.cpp.obj: CXX_COMPILER__code_Debug E$:/rm/code/Sentry.cpp || cmake_object_order_depends_target_code
+  DEP_FILE = CMakeFiles\code.dir\Sentry.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\code.dir
   OBJECT_FILE_DIR = CMakeFiles\code.dir
 
-build CMakeFiles/code.dir/robot_Y.cpp.obj: CXX_COMPILER__code_Debug E$:/rm/code/robot_Y.cpp || cmake_object_order_depends_target_code
-  DEP_FILE = CMakeFiles\code.dir\robot_Y.cpp.obj.d
+build CMakeFiles/code.dir/Hero.cpp.obj: CXX_COMPILER__code_Debug E$:/rm/code/Hero.cpp || cmake_object_order_depends_target_code
+  DEP_FILE = CMakeFiles\code.dir\Hero.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\code.dir
   OBJECT_FILE_DIR = CMakeFiles\code.dir
 
-build CMakeFiles/code.dir/robot_G.cpp.obj: CXX_COMPILER__code_Debug E$:/rm/code/robot_G.cpp || cmake_object_order_depends_target_code
-  DEP_FILE = CMakeFiles\code.dir\robot_G.cpp.obj.d
+build CMakeFiles/code.dir/Engineer.cpp.obj: CXX_COMPILER__code_Debug E$:/rm/code/Engineer.cpp || cmake_object_order_depends_target_code
+  DEP_FILE = CMakeFiles\code.dir\Engineer.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\code.dir
   OBJECT_FILE_DIR = CMakeFiles\code.dir
 
-build CMakeFiles/code.dir/judge_sys.cpp.obj: CXX_COMPILER__code_Debug E$:/rm/code/judge_sys.cpp || cmake_object_order_depends_target_code
-  DEP_FILE = CMakeFiles\code.dir\judge_sys.cpp.obj.d
+build CMakeFiles/code.dir/JudgeSystem.cpp.obj: CXX_COMPILER__code_Debug E$:/rm/code/JudgeSystem.cpp || cmake_object_order_depends_target_code
+  DEP_FILE = CMakeFiles\code.dir\JudgeSystem.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\code.dir
   OBJECT_FILE_DIR = CMakeFiles\code.dir
@@ -99,7 +99,7 @@ build CMakeFiles/code.dir/judge_sys.cpp.obj: CXX_COMPILER__code_Debug E$:/rm/cod
 #############################################
 # Link the executable code.exe
 
-build code.exe: CXX_EXECUTABLE_LINKER__code_Debug CMakeFiles/code.dir/main.cpp.obj CMakeFiles/code.dir/robot.cpp.obj CMakeFiles/code.dir/robot_B.cpp.obj CMakeFiles/code.dir/robot_S.cpp.obj CMakeFiles/code.dir/robot_Y.cpp.obj CMakeFiles/code.dir/robot_G.cpp.obj CMakeFiles/code.dir/judge_sys.cpp.obj
+build code.exe: CXX_EXECUTABLE_LINKER__code_Debug CMakeFiles/code.dir/main.cpp.obj CMakeFiles/code.dir/Robot.cpp.obj CMakeFiles/code.dir/Infantry.cpp.obj CMakeFiles/code.dir/Sentry.cpp.obj CMakeFiles/code.dir/Hero.cpp.obj CMakeFiles/code.dir/Engineer.cpp.obj CMakeFiles/code.dir/JudgeSystem.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\code.dir
