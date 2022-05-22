@@ -16,6 +16,8 @@
 #include "Engineer.h"
 #include "Sentry.h"
 
+using namespace std;
+
 class JudgeSystem {
 public:
 
