@@ -23,6 +23,9 @@ public:
     //攻击
     void Fight(int attack);
 
+    //发射
+    void Hit(int heat);
+
     //血量上限
     int total_health_ = 200;
 
