@@ -100,7 +100,7 @@ void JudgeSystem::Fight()
     int id;
     char team;
     int atk;
-    int team_in;
+    enum Team {kred, kblue} team_in;
 
     cout << "请输入所属队伍" << endl;
     cin >> team;
@@ -112,11 +112,19 @@ void JudgeSystem::Fight()
     //转换成枚举量
     if (team = 'R')
     {
-        team_in = 0;
+        team_in = kred;
     }
     else
     {
-        team_in = 1;
+        team_in = kblue;
     }
 
+    //遍历查找
+    for(int i = 0; i < RoboNum; i++)
+    {
+        if(RoboArry[i]->team_ = team_in )
+        {
+
+        }
+    }
 }
