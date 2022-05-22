@@ -8,8 +8,26 @@
 #ifndef CODE_ENGINEER_H
 #define CODE_ENGINEER_H
 
+#include <iostream>
+#include <string>
+#include "Robot.h"
 
-class Engineer {
+using namespace std;
+
+class Engineer :public Robot{
+public:
+
+    //构造函数
+    Engineer(Team team_, unsigned short index_);
+
+    //攻击
+    void Fight();
+
+    //发射
+    void Hit();
+
+    //信息输出
+    void Print();
 
 };
 

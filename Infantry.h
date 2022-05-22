@@ -8,8 +8,38 @@
 #ifndef CODE_INFANTRY_H
 #define CODE_INFANTRY_H
 
+#include <iostream>
+#include <string>
+#include "Robot.h"
 
-class Infantry {
+using namespace std;
+
+class Infantry :public Robot{
+public:
+
+    //构造函数
+    Infantry(Team team_, unsigned short index_);
+    //攻击
+    void Fight();
+
+    //发射
+    void Hit();
+
+    //武器口径
+    enum Caliber {kseventeen_mm, kfortytwo_mm};
+
+    //热量上限
+    int ceiling_heat;
+
+    //增加热量
+    int heat_add;
+
+    //目前热量
+    int heat_point;
+
+    //信息输出
+    void Print();
+
 
 };
 

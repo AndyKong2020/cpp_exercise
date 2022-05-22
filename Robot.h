@@ -23,7 +23,7 @@ public:
     virtual void Hit() = 0;
 
     //所属队伍
-    enum Team {kred, kblue};
+    enum Team {kred, kblue} team_;
 
     //编号
     unsigned short index_;
@@ -37,18 +37,8 @@ public:
     //剩余血量
     int health_point;
 
-    //武器口径
-    enum Caliber {kseventeen_mm, kfortytwo_mm};
-
-    //热量上限
-    int ceiling_heat;
-
-    //增加热量
-    int heat_add;
-
-    //目前热量
-    int heat_point;
-
+    //信息输出
+    virtual void Print() = 0;
 
 };
 

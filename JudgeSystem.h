@@ -10,6 +10,19 @@
 
 
 class JudgeSystem {
+public:
+
+    //构造函数
+    JudgeSystem();
+
+    //攻击
+    void Fight();
+
+    //发射
+    void Hit();
+
+    //输出
+    void ShowInfo();
 
 };
 
