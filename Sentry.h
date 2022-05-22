@@ -21,13 +21,13 @@ public:
     Sentry(Team team_, unsigned short index_);
 
     //攻击
-    virtual void Fight();
+    void Fight(int attack);
 
     //发射
-    virtual void Hit();
+    void Hit(int heat);
 
     //武器口径
-    enum Caliber {kseventeen_mm, kfortytwo_mm};
+    enum Caliber {kseventeen_mm, kfortytwo_mm} caliber_;
 
     //热量上限
     int ceiling_heat;

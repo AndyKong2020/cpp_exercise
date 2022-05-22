@@ -6,3 +6,21 @@
 //
 
 #include "Infantry.h"
+
+//构造函数
+Infantry::Infantry(Team team_, unsigned short index_)
+{
+    this->team_ = team_;
+    this->index_ = index_;
+}
+
+//攻击
+void Infantry::Fight(int attack)
+{
+    if(health_point_ <= 0)
+    {
+        cout << team_ << " " << index_ << "died" << endl;
+        health_point_ = 0;
+    }
+
+}

@@ -21,10 +21,7 @@ public:
     Engineer(Team team_, unsigned short index_);
 
     //攻击
-    void Fight();
-
-    //发射
-    void Hit();
+    void Fight(int attack);
 
     //信息输出
     void Print();

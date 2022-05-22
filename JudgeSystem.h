@@ -8,6 +8,13 @@
 #ifndef CODE_JUDGESYSTEM_H
 #define CODE_JUDGESYSTEM_H
 
+#include <iostream>
+#include <string>
+#include "Robot.h"
+#include "Infantry.h"
+#include "Hero.h"
+#include "Engineer.h"
+#include "Sentry.h"
 
 class JudgeSystem {
 public:
@@ -15,14 +22,17 @@ public:
     //构造函数
     JudgeSystem();
 
+    //生成
+    void Born(char born_team, char born_type, char born_index);
+
     //攻击
-    void Fight();
+    void Fight(char fight_team, char fight_index, char fight_attack);
 
     //发射
-    void Hit();
+    void Hit(char hit_team, char hit_index, char hit_heat);
 
     //输出
-    void ShowInfo();
+    void ShowInfo(char show_team, char show_index);
 
 };
 

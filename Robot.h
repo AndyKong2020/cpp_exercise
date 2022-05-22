@@ -31,11 +31,8 @@ public:
     //血量上限
     int total_health_;
 
-    //扣除血量
-    int health_minus;
-
     //剩余血量
-    int health_point;
+    int health_point_;
 
     //信息输出
     virtual void Print() = 0;

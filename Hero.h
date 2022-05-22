@@ -21,19 +21,16 @@ public:
     Hero(Team team_, unsigned short index_);
 
     //攻击
-    void Fight();
+    void Fight(int attack);
 
     //发射
-    void Hit();
+    void Hit(int heat);
 
     //武器口径
-    enum Caliber {kseventeen_mm, kfortytwo_mm};
+    enum Caliber {kseventeen_mm, kfortytwo_mm} caliber_;
 
     //热量上限
     int ceiling_heat;
-
-    //增加热量
-    int heat_add;
 
     //目前热量
     int heat_point;
