@@ -83,7 +83,7 @@ void JudgeSystem::Born()
         delete[] this->RoboArry;
         this->RoboArry = newSpace;
 
-        this->RoboArry = newSize;
+        this->RoboNum = newSize;
         cout << "成功添加" << addNum << "个机器人" << endl;
 
 
@@ -95,3 +95,28 @@ void JudgeSystem::Born()
 
 }
 
+void JudgeSystem::Fight()
+{
+    int id;
+    char team;
+    int atk;
+    int team_in;
+
+    cout << "请输入所属队伍" << endl;
+    cin >> team;
+    cout << "请输入编号" << endl;
+    cin >> id;
+    cout << "请输入伤害量" << endl;
+    cin >> atk;
+
+    //转换成枚举量
+    if (team = 'R')
+    {
+        team_in = 0;
+    }
+    else
+    {
+        team_in = 1;
+    }
+
+}
