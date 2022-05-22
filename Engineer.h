@@ -23,6 +23,12 @@ public:
     //攻击
     void Fight(int attack);
 
+    //血量上限
+    int total_health_ = 200;
+
+    //剩余血量
+    int health_point_ = 200;
+
     //信息输出
     void Print();
 

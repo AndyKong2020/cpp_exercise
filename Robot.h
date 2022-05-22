@@ -34,6 +34,19 @@ public:
     //剩余血量
     int health_point_;
 
+    //武器口径
+    enum Caliber {kseventeen_mm, kfortytwo_mm} caliber_;
+
+    //热量上限
+    int ceiling_heat;
+
+    //增加热量
+    int heat_add;
+
+    //目前热量
+    int heat_point;
+
+
     //信息输出
     virtual void Print() = 0;
 

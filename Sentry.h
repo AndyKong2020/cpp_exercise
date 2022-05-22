@@ -27,16 +27,20 @@ public:
     void Hit(int heat);
 
     //武器口径
-    enum Caliber {kseventeen_mm, kfortytwo_mm} caliber_;
+    enum Caliber {kseventeen_mm, kfortytwo_mm} ;
+    Caliber caliber_ = kseventeen_mm;
+
+    //血量上限
+    int total_health_ = 200;
+
+    //剩余血量
+    int health_point_ = 200;
 
     //热量上限
-    int ceiling_heat;
-
-    //增加热量
-    int heat_add;
+    int ceiling_heat = 300;
 
     //目前热量
-    int heat_point;
+    int heat_point = 0;
 
     //信息输出
     void Print();

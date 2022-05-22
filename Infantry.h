@@ -43,6 +43,7 @@ public:
     //目前热量
     int heat_point = 0;
 
+
     //信息输出
     void Print();
 

@@ -23,16 +23,20 @@ public:
     JudgeSystem();
 
     //生成
-    void Born(char born_team, char born_type, char born_index);
+    void Born();
 
     //攻击
-    void Fight(char fight_team, char fight_index, char fight_attack);
+    void Fight();
 
     //发射
-    void Hit(char hit_team, char hit_index, char hit_heat);
+    void Hit();
 
     //输出
-    void ShowInfo(char show_team, char show_index);
+    void ShowInfo();
+
+    int RoboNum;
+
+    Robot** RoboArry;
 
 };
 

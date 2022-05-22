@@ -6,3 +6,8 @@
 //
 
 #include "JudgeSystem.h"
+
+JudgeSystem::Born(char born_team, char born_type, char born_index)
+{
+
+}
