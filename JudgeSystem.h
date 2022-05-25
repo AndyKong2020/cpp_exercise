@@ -28,17 +28,17 @@ public:
     void Born();
 
     //攻击
-    void Fight();
+    void Fight() const;
 
     //发射
-    void Hit();
+    void Hit() const;
 
     //输出
-    void ShowInfo();
+    void ShowInfo() const;
 
-    int RoboNum;
+    int RoboNum{};
 
-    Robot** RoboArry;
+    Robot** RoboArry{};
 
 };
 

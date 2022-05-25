@@ -15,7 +15,7 @@
 
 
 //构造函数
-JudgeSystem::JudgeSystem(){}
+JudgeSystem::JudgeSystem()= default;
 
 void JudgeSystem::Born()
 {
@@ -27,7 +27,7 @@ void JudgeSystem::Born()
         int newSize = this->RoboNum + addNum;
         Robot** newSpace = new Robot* [newSize];
 
-        if (this->RoboArry != NULL)
+        if (this->RoboArry != nullptr)
         {
             for (int i = 0; i < this->RoboNum; i++)
             {
@@ -47,10 +47,10 @@ void JudgeSystem::Born()
             cin >> id;
             cout << "请输入第"<<i+1<<"个机器人的兵种" << endl;
             cin >> type;
-            Robot* robot = NULL;
+            Robot* robot = nullptr;
 
             //转换成枚举量
-            if (team = 'R')
+            if (team == 'R')
             {
                 team_in = 0;
             }
@@ -95,7 +95,7 @@ void JudgeSystem::Born()
 
 }
 
-void JudgeSystem::Fight()
+void JudgeSystem::Fight() const
 {
     int id;
     char team;
@@ -129,7 +129,7 @@ void JudgeSystem::Fight()
     }
 }
 
-void JudgeSystem::Hit()
+void JudgeSystem::Hit() const
 {
     int id;
     char team;
@@ -163,7 +163,7 @@ void JudgeSystem::Hit()
     }
 }
 
-void JudgeSystem::ShowInfo()
+void JudgeSystem::ShowInfo() const
 {
     //打印红队数据
     for(int i = 0; i < RoboNum; i++)
