@@ -42,7 +42,7 @@ void Infantry::Fight(int attack)
 //发射
 void Infantry::Hit(int heat)
 {
-    if(health_point_ == total_health_)//判断生命值是否零
+    if(health_point_ == 0)//判断生命值是否零
     {
         cout << team_ << " " << index_ << "died" << endl;
     }
@@ -57,6 +57,7 @@ void Infantry::Hit(int heat)
         {
             cout << team_ << " " << index_ << "died" << endl;
             heat_point = ceiling_heat;
+            health_point_ = 0;
         }
     }
 }
