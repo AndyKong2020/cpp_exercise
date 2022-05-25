@@ -25,7 +25,7 @@ void JudgeSystem::Born()
     if (addNum > 0)
     {
         int newSize = this->RoboNum + addNum;
-        Robot** newSpace = new Robot* [newSize];
+        auto** newSpace = new Robot* [newSize];
 
         if (this->RoboArry != nullptr)
         {
@@ -39,7 +39,7 @@ void JudgeSystem::Born()
             int id;
             char team;
             char type;
-            int team_in;
+            enum TeamIn {kred, kblue} team_in;
 
             cout << "请输入第"<<i+1<<"个机器人所属队伍" << endl;
             cin >> team;
@@ -49,29 +49,30 @@ void JudgeSystem::Born()
             cin >> type;
             Robot* robot = nullptr;
 
+
             //转换成枚举量
             if (team == 'R')
             {
-                team_in = 0;
+                team_in = kred;
             }
             else
             {
-                team_in = 1;
+                team_in = kblue;
             }
 
             switch (type)
             {
                 case 'B':
-                    robot = new Infantry(team, id);
+                    robot = new Infantry(team_in, id);
                     break;
                 case 'S':
-                    robot = new Sentry(team, id);
+                    robot = new Sentry(team_in, id);
                     break;
                 case 'Y':
-                    robot = new Hero(team, id);
+                    robot = new Hero(team_in, id);
                     break;
                 case 'G':
-                    robot = new Engineer(team, id);
+                    robot = new Engineer(team_in, id);
                     break;
                 default:
                     break;
@@ -100,7 +101,7 @@ void JudgeSystem::Fight() const
     int id;
     char team;
     int atk;
-    enum Team {kred, kblue} team_in;
+    enum TeamIn {kred, kblue} team_in;
 
     cout << "请输入所属队伍" << endl;
     cin >> team;
