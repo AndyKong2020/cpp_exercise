@@ -124,7 +124,41 @@ void JudgeSystem::Fight()
     {
         if(RoboArry[i]->team_ == team_in && RoboArry[i]->index_ == id)
         {
-            RoboArry[i]->Fight(atk);
+            RoboArry[i]->Fight(atk);//扣血
+        }
+    }
+}
+
+void JudgeSystem::Hit()
+{
+    int id;
+    char team;
+    int ht;
+    enum Team {kred, kblue} team_in;
+
+    cout << "请输入所属队伍" << endl;
+    cin >> team;
+    cout << "请输入编号" << endl;
+    cin >> id;
+    cout << "请输入弹丸数量" << endl;
+    cin >> ht;
+
+    //转换成枚举量
+    if (team == 'R')
+    {
+        team_in = kred;
+    }
+    else
+    {
+        team_in = kblue;
+    }
+
+    //遍历查找
+    for(int i = 0; i < RoboNum; i++)
+    {
+        if(RoboArry[i]->team_ == team_in && RoboArry[i]->index_ == id)
+        {
+            RoboArry[i]->Hit(ht);//加热量值
         }
     }
 }
