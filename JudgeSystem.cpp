@@ -5,6 +5,7 @@
 //描述:
 //
 
+#include <vector>
 #include "JudgeSystem.h"
 #include "Robot.h"
 #include "Infantry.h"
@@ -16,6 +17,44 @@
 
 //构造函数
 JudgeSystem::JudgeSystem()= default;
+
+/*void JudgeSystem::Born()
+{
+    vector<Infantry> vec_infantry;
+    vector<Sentry> vec_sentry;
+    vector<Hero> vec_hero;
+    vector<Engineer> vec_engineer;
+
+
+    int id;
+    char team;
+    char type;
+    enum TeamIn {kred, kblue} team_in;
+
+    cout << "请输入机器人所属队伍" << endl;
+    cin >> team;
+    cout << "请输入机器人的编号" << endl;
+    cin >> id;
+    cout << "请输入机器人的兵种" << endl;
+    cin >> type;
+
+
+    //转换成枚举量
+    if (team == 'R')
+    {
+        team_in = kred;
+    }
+    else
+    {
+        team_in = kblue;
+    }
+
+    if (type == 'B')
+    {
+
+
+
+}*/
 
 void JudgeSystem::Born()
 {
@@ -36,7 +75,7 @@ void JudgeSystem::Born()
         }
         for (int i = 0; i < addNum; i++)
         {
-            int id;
+            unsigned short id;
             char team;
             char type;
             enum TeamIn {kred, kblue} team_in;
@@ -96,6 +135,8 @@ void JudgeSystem::Born()
 
 }
 
+
+
 void JudgeSystem::Fight() const
 {
     int id;
@@ -130,6 +171,8 @@ void JudgeSystem::Fight() const
     }
 }
 
+
+
 void JudgeSystem::Hit() const
 {
     int id;
@@ -163,6 +206,8 @@ void JudgeSystem::Hit() const
         }
     }
 }
+
+
 
 void JudgeSystem::ShowInfo() const
 {
