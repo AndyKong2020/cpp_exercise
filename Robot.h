@@ -35,7 +35,7 @@ public:
     int health_point_;
 
     //武器口径
-    enum Caliber {kseventeen_mm, kfortytwo_mm} caliber_;
+    enum Caliber {kseventeen_mm = 15, kfortytwo_mm = 30} caliber_;
 
     //热量上限
     int ceiling_heat;

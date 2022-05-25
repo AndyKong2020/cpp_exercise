@@ -48,7 +48,7 @@ void Infantry::Hit(int heat)
     }
     else
     {
-        heat_point += heat;
+        heat_point += heat*caliber_;
         if(heat_point < 0)
         {
             heat_point = 0;

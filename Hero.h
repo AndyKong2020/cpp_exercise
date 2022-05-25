@@ -27,7 +27,7 @@ public:
     void Hit(int heat);
 
     //武器口径
-    enum Caliber {kseventeen_mm, kfortytwo_mm} ;
+    enum Caliber {kseventeen_mm = 15, kfortytwo_mm = 30} ;
     Caliber caliber_ = kfortytwo_mm;
 
     //血量上限

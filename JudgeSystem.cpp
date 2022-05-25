@@ -162,3 +162,23 @@ void JudgeSystem::Hit()
         }
     }
 }
+
+void JudgeSystem::ShowInfo()
+{
+    //打印红队数据
+    for(int i = 0; i < RoboNum; i++)
+    {
+        if(RoboArry[i]->team_ == 0)
+        {
+            RoboArry[i]->Print();
+        }
+    }
+    //打印蓝队数据
+    for(int i = 0; i < RoboNum; i++)
+    {
+        if(RoboArry[i]->team_ == 1)
+        {
+            RoboArry[i]->Print();
+        }
+    }
+}
