@@ -110,7 +110,7 @@ void JudgeSystem::Fight()
     cin >> atk;
 
     //转换成枚举量
-    if (team = 'R')
+    if (team == 'R')
     {
         team_in = kred;
     }
@@ -122,9 +122,9 @@ void JudgeSystem::Fight()
     //遍历查找
     for(int i = 0; i < RoboNum; i++)
     {
-        if(RoboArry[i]->team_ = team_in )
+        if(RoboArry[i]->team_ == team_in && RoboArry[i]->index_ == id)
         {
-
+            RoboArry[i]->Fight(atk);
         }
     }
 }

@@ -17,10 +17,10 @@ class Robot {
 public:
 
     //攻击
-    virtual void Fight() = 0;
+    virtual void Fight(int attack) = 0;
 
     //发射
-    virtual void Hit() = 0;
+    virtual void Hit(int heat) = 0;
 
     //所属队伍
     enum Team {kred, kblue} team_;
