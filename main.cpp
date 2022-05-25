@@ -12,22 +12,22 @@ int main() {
     while (1)
     {
         cin >> order;
-        switch (order)
+        if (order == 'A')
         {
-            case 'A':
-                Js.Born();
-                break;
-            case 'F':
-                Js.Fight();
-                break;
-            case 'H':
-                Js.Hit();
-                break;
-            case 'E':
-                Js.ShowInfo();
-                break;
-
-
+            Js.Born();
+        }
+        else if (order == 'F')
+        {
+            Js.Fight();
+        }
+        else if (order == 'H')
+        {
+            Js.Hit();
+        }
+        else if (order == 'E')
+        {
+            Js.ShowInfo();
+            break;
         }
     }
 

@@ -1,3 +1,11 @@
 # ninja log v5
 0	425	6746657185034099	CMakeFiles/code.dir/main.cpp.obj	55a5cac73be8435
 428	581	6746657186554133	code.exe	3149ce0317edd6a3
+23	788	6749318802666709	CMakeFiles/code.dir/Robot.cpp.obj	217adad8411cce6b
+21	790	6749318802676706	CMakeFiles/code.dir/main.cpp.obj	55a5cac73be8435
+33	791	6749318802686724	CMakeFiles/code.dir/Sentry.cpp.obj	fe43a329808b03c5
+26	793	6749318802686724	CMakeFiles/code.dir/Engineer.cpp.obj	5d3f30f754cc8df0
+2	794	6749318802686724	CMakeFiles/code.dir/Infantry.cpp.obj	91010bccc4896ec
+30	794	6749318802686724	CMakeFiles/code.dir/Hero.cpp.obj	a5d9768867069818
+2	343	6749320217713374	CMakeFiles/code.dir/main.cpp.obj	55a5cac73be8435
+2	745	6751818460554238	CMakeFiles/code.dir/main.cpp.obj	55a5cac73be8435
