@@ -22,10 +22,10 @@ public:
     Infantry(Team team_, unsigned short index_);
 
     //攻击
-    void Fight(int attack);
+    void Fight(int attack) override;
 
     //发射
-    void Hit(int heat);
+    void Hit(int heat) override;
 
     //武器口径
     enum Caliber {kseventeen_mm = 15, kfortytwo_mm = 30} ;
@@ -45,7 +45,7 @@ public:
 
 
     //信息输出
-    void Print();
+    void Print() override;
 
 
 };

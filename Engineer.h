@@ -21,10 +21,10 @@ public:
     Engineer(Team team_, unsigned short index_);
 
     //攻击
-    void Fight(int attack);
+    void Fight(int attack) override;
 
     //发射
-    void Hit(int heat);
+    void Hit(int heat) override;
 
     //血量上限
     int total_health_ = 200;
@@ -33,7 +33,7 @@ public:
     int health_point_ = 200;
 
     //信息输出
-    void Print();
+    void Print() override;
 
 };
 
