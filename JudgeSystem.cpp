@@ -102,16 +102,16 @@ void JudgeSystem::Born()
             switch (type)
             {
                 case 'B':
-                    robot = new Infantry(team_in, id);
+                    robot = new Infantry(static_cast<Robot::Team>(team_in), id);
                     break;
                 case 'S':
-                    robot = new Sentry(team_in, id);
+                    robot = new Sentry(static_cast<Robot::Team>(team_in), id);
                     break;
                 case 'Y':
-                    robot = new Hero(team_in, id);
+                    robot = new Hero(static_cast<Robot::Team>(team_in), id);
                     break;
                 case 'G':
-                    robot = new Engineer(team_in, id);
+                    robot = new Engineer(static_cast<Robot::Team>(team_in), id);
                     break;
                 default:
                     break;
