@@ -11,7 +11,7 @@ int main() {
     char order;
     while (1)
     {
-        cout <<"A:SPAWN F:FIGHT H:HIT E:END"<< endl
+        cout <<"A:SPAWN F:FIGHT H:HIT E:END"<< endl;
         cin >> order;
         if (order == 'A')
         {
