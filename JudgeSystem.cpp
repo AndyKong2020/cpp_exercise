@@ -59,7 +59,7 @@ JudgeSystem::JudgeSystem()= default;
 void JudgeSystem::Born()
 {
     int addNum=0;
-    cout << "输入要新建的机器人个数" << endl;
+    cout << "Please input how many robots you want to create." << endl;
     cin >> addNum;
     if (addNum > 0)
     {
@@ -80,11 +80,11 @@ void JudgeSystem::Born()
             char type;
             enum TeamIn {kred, kblue} team_in;
 
-            cout << "请输入第"<<i+1<<"个机器人所属队伍" << endl;
+            cout << "Please input the team of robot NO."<<i+1<<"(R/B)" << endl;
             cin >> team;
-            cout << "请输入第"<<i+1<<"个机器人的编号" << endl;
+            cout << "Please input the ID of robot NO."<<i+1<< endl;
             cin >> id;
-            cout << "请输入第"<<i+1<<"个机器人的兵种" << endl;
+            cout << "Please input the type of robot NO."<<i+1<<"(B/S/Y/G)" << endl;
             cin >> type;
             Robot* robot = nullptr;
 
@@ -124,13 +124,13 @@ void JudgeSystem::Born()
         this->RoboArry = newSpace;
 
         this->RoboNum = newSize;
-        cout << "成功添加" << addNum << "个机器人" << endl;
+        cout << "Successfully created" << addNum << "robot" << endl;
 
 
     }
     else
     {
-        cout << "输入数据有误！" << endl;
+        cout << "input error" << endl;
     }
 
 }
@@ -144,11 +144,11 @@ void JudgeSystem::Fight() const
     int atk;
     enum TeamIn {kred, kblue} team_in;
 
-    cout << "请输入所属队伍" << endl;
+    cout << "Please input the team(R/B)" << endl;
     cin >> team;
-    cout << "请输入编号" << endl;
+    cout << "Please input the ID" << endl;
     cin >> id;
-    cout << "请输入伤害量" << endl;
+    cout << "Please input ATK point" << endl;
     cin >> atk;
 
     //转换成枚举量
@@ -180,11 +180,11 @@ void JudgeSystem::Hit() const
     int ht;
     enum Team {kred, kblue} team_in;
 
-    cout << "请输入所属队伍" << endl;
+    cout << "Please input the team(R/B)" << endl;
     cin >> team;
-    cout << "请输入编号" << endl;
+    cout << "Please input the ID" << endl;
     cin >> id;
-    cout << "请输入弹丸数量" << endl;
+    cout << "Please input hit point" << endl;
     cin >> ht;
 
     //转换成枚举量

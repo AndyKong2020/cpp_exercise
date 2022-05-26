@@ -20,7 +20,7 @@ void Engineer::Fight(int attack)
     health_point_ -= attack;
     if(health_point_ <= 0)
     {
-        cout << team_ << " " << index_ << "died" << endl;
+        cout << team_ << " " << index_ << " died" << endl;
         health_point_ = 0;
     }
     else if(health_point_ > total_health_)
